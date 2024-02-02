@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <script src="scrpit.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="screen1">
+            <section>
+                <h1>Jogo da Adivinhação</h1>
+                <p>Adivinhe o número entre 0 e 10</p>
+            </section>
+            <div>
+                <form action="">
+                    <input id="inputNumber" type="number">
+                    <button onclick="handleClick(event)">TENTAR</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="screen2 hide">
+            <h2>Vc acertou em 3 TENTATIVAS</h2>
+            <button onclick="backtoPage(event)" id="button">Jogar Novamente</button>
+        </div>
+    </main>
+</body>
+
+</html>
